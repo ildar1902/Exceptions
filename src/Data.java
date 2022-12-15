@@ -67,4 +67,11 @@ public class Data {
         }
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Вводимые данные: " + String.format("%n") + "Логин: " + getLogin() + String.format("%n")
+                + "Пароль: " + getPassword() + String.format("%n") +
+                "Подтверждение пароля: " + getConfirmPassword();
+    }
 }
